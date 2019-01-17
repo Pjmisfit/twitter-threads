@@ -1,2 +1,2 @@
-# twitter-thread.github-io
+# Twitter-Thread
 Prepare your threads before sharing it on twitter.
