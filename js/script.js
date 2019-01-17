@@ -5,8 +5,8 @@ $(document).ready(function(){
 			var thisTweetVal = $(this).val().length;
 
 			/*go to each parent div, find .rem, count from 140 character, write this into it*/
-			$(this).parent().find(".rem").text(140 - thisTweetVal);
-			if (thisTweetVal > 130) {
+			$(this).parent().find(".rem").text(280 - thisTweetVal);
+			if (thisTweetVal > 270) {
 				$(this).parent().find(".rem").css({"color": "tomato"}); //change color after 130 char
 			}
 		});
@@ -198,7 +198,9 @@ $(document).ready(function(){
 		});
 	}
 	fixCopyBox();
-	$('.thebell').addClass('shake');
+	$(window).focus(function() {
+	    $('.thebell').addClass('shake');
+	});
 });
 
 
